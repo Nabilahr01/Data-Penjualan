@@ -36,3 +36,13 @@ struct ListBarang {
 struct ListRelasi {
     Relasi *first;
 };
+
+
+//fungsi untuk membuat list
+void createListToko(ListToko &LT);
+void createListBarang(ListBarang &LB);
+void createListRelasi(ListRelasi &LR);
+//fungsi untuk membuat node baru
+Toko *createToko(int id, string nama);
+Barang *createBarang(int id, string nama, string kategori, double harga);
+Relasi *createRelasi(Toko *t, Barang *b);
